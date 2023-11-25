@@ -29,14 +29,18 @@ export default function HomeScreen() {
       </SafeAreaView>
 
       <ScrollView
-      showsVerticalScrollIndicator={false}
-      contentContainerStyle={{paddingBottom: 10}}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 10 }}
       >
         {/* Trending movie carousel */}
-        <TrendingMovies data={trending}/>
+        <TrendingMovies data={trending} />
 
         {/* Upcoming Movies */}
-        <MovieList title="Upcoming" data={upcoming} />
+        <MovieList title="Upcoming Movies" data={upcoming} />
+
+        {/* Top rated Movies */}
+        <MovieList title="Top Rated Movies" data={topRated} />
+
       </ScrollView>
     </View>
   );
